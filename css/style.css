@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    --primary_color: #a82c48;
+    --secondary_color: #43121d;
+    --third_color: #f98169;
+    --text_color: #555;
+    --text_gray: #999;
+    --primary_font: 'Roboto', sans-serif;
+    --secondary_font: 'Quicksand', sans-serif;
+}
+
+:active, :hover, :focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary_color) !important;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary_font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary_color);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    font-family: var(--secondary_font);
+    color: var(--secondary_color);
+    line-height: 3rem;
+}
+
+h4 {
+    color: var(--secondary_color);
+    font-family: var(--secondary_font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+h5 {
+    color: var(--primary_color);
+    text-transform: capitalize;
+    font-family: var(--secondary_font);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text_color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main_btn {
+    display: inline-block;
+    padding: .625rem 1.875rem;
+    line-height: 1.5625rem;
+    background: var(--primary_color);
+    border: .1875rem solid var(--primary_color);
+    color: white !important;
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.main_btn:hover {
+    background: transparent;
+    color: var(--primary_color) !important;
+}
+
+.white_btn {
+    padding: .625rem 1.875rem;
+    line-height: 25px;
+    background: white;
+    color: var(--text_color);
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgba(0, 0, 0, 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white_btn:hover {
+    background: transparent;
+    color: var(--primary_color) !important;
+    border-color: var(--primary_color);
+}
+
+.wrapper {
+    padding-top: 8.25rem;
+    padding-bottom: 8.28rem;
+}
+
+.text_content {
+    width: 70%;
+    margin: auto;
+}
+
+.counter_section h2, .testimonial_section h2, .book_food_text h2 {
+    color: #fff;
+}
+
+/* ==================================================
+    ACCUAL css starts
+==================================================== */
+
+/* ===================================================
+    navbar design 
+=================================================== */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
+.navbar .nav-item {
+    padding: 0 .625rem;
+    transition: all .2s linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: .9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary_color);
+    letter-spacing: 1px;
+}
+
+.navbar .main_btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: .625rem;
+}
+
+.navbar-brand img {
+    width: 100%;
+    height: 50px;
+}
+
+/* change navbar styling on scroll  */
+
+.mynav.scroll_on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, .9);
+    transition: all .5s ease-in-out 0s;
+}
+
+/* =============================
+top banner css
+============================ */
+
+/* -------------section 1 top banner ------------------------ */
+
+.top_banner {
+    width: 100%;
+    height: 100vh;
+    background: #FAFAFA;
+    /* padding: 16.875rem 0 9.375rem; */
+}
+
+/* -----------counter section starts _____________ */
+
+.counter_section {
+    background: var(--primary_color);
+    padding: 2.5rem 0;
+}
+
+.counter_section p {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* -----------------------about us section starts -------------------- */
+
+.row1 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1 figure img {
+    border-radius: 10px;
+}
+
+.about_bottom .row .innerdiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center !important;
+}
+
+.about_bottom .row .innerdiv i {
+    padding-right: 20px;
+}
+
+.row2 {
+    width: 100%;
+    height: 85vh;
+}
+
+.row2 figure img {
+    border-radius: 10px;
+}
+
+/* -----------------------about us section ends -------------------- */
+
+/* ======================3rd section starts==================================== */
+
+.third_sec {
+    width: 100%;
+    height: 60vh;
+    margin: 100px 0;
+    background: url(../images/salami-pizza-6593465_1920.jpg) center no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.third_sec h2, .third_sec p {
+    color: white;
+}
+
+.third_sec h2 {
+    padding-top: 100px;
+}
+
+.third_sec .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======================3rd section ends==================================== */
+
+/* ===============================food section starts =============================== */
+
+.food_headings h2 {
+    margin: 50px 0;
+}
+
+.food_bottom .row img {
+    border-radius: 5px;
+}
+
+/* ===============================food section ends =============================== */
+
+/* ========carousel section starts============================== */
+
+.testimonials {
+    background: var(--primary_color);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .container h2 {
+    color: #fff !important;
+}
+
+.testimonials .container .carousel-inner {
+    background: #fff;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    border-radius: 16px;
+}
+
+.carousel-inner .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.carousel-inner .carousel-item img {
+    width: 60px !important;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* ========carousel section ends============================== */
+
+/* ==============faq section starts ============================ */
+
+.faq {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.faq h2 {
+    margin: 30px 0 100px 0;
+    color: var(--primary_color);
+}
+
+.faq .row h4 {
+    color: var(--primary_color);
+}
+
+.faq .row p {
+    font-size: .8rem;
+    color: grey;
+}
+
+/* ==============faq section ends ============================ */
+
+/* ===================== mini sec starts ================================= */
+
+.mini_sec {
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/razvan-mirel-X77IdBxcZlA-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mini_sec h2 {
+    color: #fff !important;
+    text-shadow: 3px 3px 20px 0 rgb(0, 0, 0);
+}
+
+/* ===================== mini sec ends ================================= */
+
+/* =========================== newsletter sec starts =============================== */
+
+.newsletter {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.newsletter .container h2 {
+    color: var(--primary_color);
+    padding: 50px 0 10px 0;
+}
+
+.newsletter .container .middle_newsletter p {
+    margin-bottom: 35px;
+}
+
+.newsletter .container .middle_newsletter .form-inline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .container .middle_newsletter .form-inline .main_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 6.3px;
+    border-radius: 1px;
+}
+
+/* =========================== newsletter sec ends =============================== */
+
+/* =========================== footer sec starts =============================== */
+
+footer {
+    background: var(--primary_color);
+}
+
+footer .footer_last {
+    padding: 30px 300px 10px 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .footer_last a, footer .footer_last p {
+    color: #fff !important;
+}
+
+/* =========================== footer sec ends =============================== */
+
+/* ===================================
+    custom scrollbar 
+==================================== */
+
+::-webkit-scrollbar {
+    width: .625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-slider-thumb {
+    background: var(--primary_color);
+}
+
+@media(max-width:768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* top banner section  */
+    .top_banner {
+        width: 100%;
+        height: auto;
+    }
+    .top_banner .row {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .top_banner .row h1 {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+    .top_banner .row p {
+        font-size: .8rem;
+        margin-bottom: 5px;
+        line-height: 1.2;
+    }
+    .top_banner .row button {
+        font-size: .8rem;
+        padding: 5px 10px;
+        margin-bottom: 50px;
+    }
+    /* counter section  */
+    .counter_section {
+        padding: 30px 10px;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .counter_section div h2 {
+        font-size: 1.2rem;
+    }
+    /* about us section  */
+    .about {
+        width: 100%;
+        height: auto;
+    }
+    .about .row1 {
+        width: 100%;
+        height: auto;
+    }
+    .about .row1 figure {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .about .row1 img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-left: 30px;
+    }
+    .about .row1 h2, .about .row2 h2 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        margin-left: 30px;
+    }
+    .about .row1 p, .about .row2 p {
+        font-size: .8rem;
+        margin-bottom: 5px;
+        line-height: 1.4;
+        margin: 20px 0;
+        margin-left: 30px;
+    }
+    .about .row1 .main_btn {
+        font-size: .8rem;
+        padding: 5px 10px;
+        margin-bottom: 0px;
+        margin-left: 30px;
+    }
+    .about .row2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 50px;
+    }
+    .about .row2 img {
+        margin-left: 15px;
+    }
+    .about_bottom .row div {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+    .about_bottom button {
+        font-size: .8rem;
+        padding: 5px 10px;
+        margin: 0px 30px;
+    }
+    /* third section  */
+    .third_sec {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .third_sec h2 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+    .third_sec p {
+        font-size: .8rem;
+        margin-bottom: 5px;
+        line-height: 1.4;
+        margin: 20px 0;
+    }
+    .third_sec button {
+        font-size: .8rem;
+        padding: 5px 10px;
+    }
+    /* food section  */
+    .food {
+        width: 100%;
+        height: auto;
+    }
+    .food_headings h2 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 7px;
+    }
+    .food_headings p {
+        font-size: .8rem;
+        margin-bottom: 5px;
+        line-height: 1.4;
+        margin: 20px 0;
+    }
+    .food_bottom .row h3 {
+        margin-bottom: -40px;
+    }
+    .food_bottom .row button {
+        font-size: .8rem;
+        padding: 5px 10px;
+        margin: -50px 0 20px 0;
+    }
+    /* .testimonial_section ' */
+    .testimonials {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+    .testimonials .container .carousel-inner {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    /* faq section  */
+    .faq {
+        width: 100%;
+        height: auto;
+    }
+    .faq h2 {
+        margin: 10px 0 30px 0;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 7px;
+        padding-top: 30px;
+    }
+    .faq .row p {
+        font-size: .8rem;
+        margin-bottom: 5px;
+        line-height: 1.4;
+        margin: 20px 0;
+    }
+    /* min section  */
+    .mini_sec {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .mini_sec h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 7px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .mini_sec button {
+        font-size: .8rem;
+        padding: 5px 10px;
+    }
+    /* .newsletter section  */
+    .newsletter {
+        height: auto;
+    }
+    .newsletter .container h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 7px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .newsletter .container .middle_newsletter p {
+        font-size: .8rem;
+        margin-bottom: 5px;
+        line-height: 1.4;
+        margin: 0px 0 25px 0;
+    }
+    
+    .newsletter .container .middle_newsletter .form-inline .main_btn {
+        font-size: .8rem;
+        padding: 5px 10px;
+    }
+    /* footer section  */
+    footer {
+        width: 100%;
+        height: auto;
+    }
+    footer .footer_last {
+        padding: 30px 1px 10px 1px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .footer_last a{
+        font-size: .6rem;
+    }
+    footer .footer_last p{
+        font-size: .6rem;
+    }
+}
